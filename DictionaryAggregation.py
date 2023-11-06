@@ -17,7 +17,7 @@ picnicinv = {
     'turkey' : 34
 }
 
-# combine these lists. Sum the duplicates
+# combine these dictionaries and sum the duplicates
 new_inv = {
     k: cart.get(k,0) + picnicinv.get(k, 0) \
         for k in set(cart | picnicinv)
